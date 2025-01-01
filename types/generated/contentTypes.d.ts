@@ -428,6 +428,12 @@ export interface ApiAboutInfoAboutInfo extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::about-info.about-info'
     >;
+    organization_name: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     other_name: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

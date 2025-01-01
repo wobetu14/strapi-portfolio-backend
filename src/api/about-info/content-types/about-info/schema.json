@@ -94,6 +94,14 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "about_info"
+    },
+    "organization_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
